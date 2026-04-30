@@ -1,0 +1,124 @@
+/* Кастомные стили для меню */
+.custom-navbar {
+    /* background: rgba(255, 255, 255, 0.05); */
+    background:none;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 24px;
+    transition: all 0.3s ease;
+     position: relative;
+    z-index: 10;
+}
+
+/* Логотип / слово слева */
+.custom-navbar .navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Ссылки меню */
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    margin: 0 8px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Активная ссылка (подсветка при скролле) */
+.custom-navbar .nav-link.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Кнопка бургер (фон и рамка) */
+.custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Фото профиля */
+.profile-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    object-fit: cover;
+    max-height: 400px;
+}
+
+/* Карточка "О себе" */
+.about-card {
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.about-text strong {
+    color: #0a0f1a;
+    font-weight: 600;
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .custom-navbar {
+        margin: 12px 16px;
+        padding: 6px 16px;
+    }
+    
+    .custom-navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .custom-navbar .nav-link {
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .profile-img {
+        border-radius: 20px;
+        max-height: 250px;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+}

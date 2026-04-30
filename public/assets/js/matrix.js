@@ -76,8 +76,8 @@ class Column {
 
     draw() {
         for (let s of this.symbols) {
-            let opacity = (s.life / maxFadeSteps) * 0.25;
-            opacity = Math.min(0.25, Math.max(0.12, opacity));
+            let opacity = (s.life / maxFadeSteps) * 0.35;
+            opacity = Math.min(0.35, Math.max(0.12, opacity));
             const baseColor = colors[s.colorIndex];
             ctx.fillStyle = `${baseColor} ${opacity})`;
             ctx.font = `${fontSize}px 'Courier New', monospace`;

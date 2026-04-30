@@ -5,15 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="assets/css/matrix.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <canvas id="matrixCanvas"></canvas>
 
-<!-- <div class="content">
-    <h1 style="font-size: 48px;">Матрица</h1>
-</div> -->
+<!-- НАВИГАЦИОННОЕ МЕНЮ -->
+<nav class="navbar navbar-expand-lg custom-navbar container mt-3 mt-md-4">
+    <div class="container-fluid px-0">
+        <a class="navbar-brand"> СТУДИЯ ВЕБ-РАЗРАБОТКИ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <!--  <li class="nav-item"><a class="nav-link" href="#about">О себе</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects-photo">Проекты фото</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Опыт</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ФОТО ПРОФИЛЯ (горизонтальное, по центру) -->
+<div class="container text-center mt-5 pt-4">
+    <img src="assets/img/Professional_programmer.jpg" alt="Профессиональный программист" class="profile-img">
+</div>
+
+<!-- БЛОК "О СЕБЕ" (закруглённый, светлый фон, тёмный текст) -->
+<section id="about" class="container my-5">
+    <div class="about-card p-4 p-md-5">
+        <!-- <h2 class="about-title">О себе</h2> -->
+        <p class="about-text">
+            Веб-разработка: <strong>начальный уровень</strong>. Предлагаю услуги по созданию небольших сайтов, лендингов, форм обратной связи. 
+            Работаю с базами данных, осуществляю вёрстку по макетам Figma.
+        </p>
+        <p class="about-text">
+            Опыт написания сайтов на <strong>PHP, MySQL, HTML, CSS, Bootstrap </strong>.
+            Пишу код с помощью <strong>ИИ</strong> (глубокое понимание промптов), полностью контролирую результат и адаптирую под задачи клиента.
+        </p>
+        <p class="about-text">
+            Верстаю макеты из Figma — <strong>как с Bootstrap, так и без него</strong> (чистый CSS, Flexbox, Grid).
+        </p>
+    </div>
+</section>
+
+    <!-- Временно для проверки скролла -->
+<div style="height: 100vh; background: transparent; color: white; text-align: center; padding: 2rem;">
+    Временный блок для проверки прокрутки
+</div>
 
 <script src="assets/js/matrix.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
