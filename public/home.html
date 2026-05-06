@@ -5,50 +5,363 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Портфолио</title>
- 
+    <title>Портфолио | Евгений Нейфельд - Fullstack Developer</title>
 </head>
 <body>
 <div class="container">
-<header class="header">
-   <div class="logo">
-    <span class="logo-white">Евгений </span>
-    <span class="orange">Нейфельд</span>
-</div>
-    <div class="nav-wrapper">
-        <ul class="nav">
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Отзывы</a></li>
-        </ul>
-        <button class="nav-btn">связаться со мной</button>
-    </div>
-</header>
-<div class="container-about">
-<section class="about">
-    
-   <div class="about-text">
-        <span class="str-hallo">Привет! Я Евгений!</span>
-        <span class="str-developer">FULLSTACK DEVELOPER</span>
-    <div class="skills">
-        <p class="skills_p">Предлагаю услуги по созданию небольших <br>
-        сайтов, лендингов, форм обратной связи. <br> Работаю с базами данных, осуществляем вёрстку по макетам Figma.</p>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-white">Евгений </span>
+            <span class="orange">Нейфельд</span>
         </div>
-        <button class="about-btn">Портфолио</button>
-   </div>
+        <div class="nav-wrapper">
+            <ul class="nav">
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
+            <button class="nav-btn">связаться со мной</button>
+        </div>
+    </header>
+
+    <!-- ПЕРВЫЙ ЭКРАН: О СЕБЕ -->
+    <div class="container-about">
+        <section class="about">
+            <div class="about-text">
+                <span class="str-hallo">Привет! Я Евгений!</span>
+                <span class="str-developer">FULLSTACK DEVELOPER</span>
+                <div class="skills">
+                    <p class="skills_p">Предлагаю услуги по созданию небольших <br>
+                    сайтов, лендингов, форм обратной связи. <br> Работаю с базами данных, осуществляем вёрстку по макетам Figma.</p>
+                </div>
+                <button class="about-btn" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">Портфолио</button>
+            </div>
+            <div class="about-photo">
+                <div class="photo-badge">
+                    <div class="badge-text">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+                <img class="photo" src="assets/images/Myphoto.png" alt="Евгений Нейфельд">
+            </div>
+        </section>
+    </div>
+
+ <!-- ВТОРОЙ ЭКРАН: ПОРТФОЛИО -->
+<section class="portfolio" id="portfolio">
+    <div class="portfolio-header">
+        <h2 class="portfolio-title">Мои <span>работы</span></h2>
+        <p class="portfolio-subtitle">Каждый проект — это уникальная история, созданная с душой</p>
+    </div>
     
-<div class="about-photo">
-    <div class="photo-badge">
-        <div class="badge-text">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
+    <!-- Карточки проектов (4 штуки) -->
+    <div class="portfolio-grid">
+        <!-- Карточка 1 - Питомник золотистых ретриверов -->
+        <div class="portfolio-card">
+            <div class="card-image">
+                <img src="assets/images/pitomnik.png" alt="Лендинг питомника">
+                <div class="card-overlay">
+                    <a href="#" class="view-project" target="_blank">Перейти на сайт →</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Питомник "Golden Heart"</h3>
+                <p class="card-description">Лендинг для питомника золотистых ретриверов с интеграцией VK API для автоматического добавления новых питомцев.</p>
+                <div class="card-tech">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">VK API</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="card-link">🔗 Демо</a>
+                    <a href="#" class="card-link">📁 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 2 - Корпоративный сайт OS -->
+        <div class="portfolio-card">
+            <div class="card-image">
+                <img src="assets/images/OS.png" alt="Корпоративный сайт OS">
+                <div class="card-overlay">
+                    <a href="#" class="view-project" target="_blank">Перейти на сайт →</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">ERP-система "ОС"</h3>
+                <p class="card-description">Корпоративная система управления с авторизацией, CRUD операциями, таблицами и генерацией отчетов.</p>
+                <div class="card-tech">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Bootstrap</span>
+                    <span class="tech-badge">AJAX</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="card-link">🔗 Демо</a>
+                    <a href="#" class="card-link">📁 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 3 - Корпоративный сайт ABS -->
+        <div class="portfolio-card">
+            <div class="card-image">
+                <img src="assets/images/ABS.png" alt="Корпоративный сайт ABS">
+                <div class="card-overlay">
+                    <a href="#" class="view-project" target="_blank">Перейти на сайт →</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">CRM "АБС-Автоматизация"</h3>
+                <p class="card-description">Система учета клиентов и документооборота. Многоуровневая авторизация, экспорт данных в Excel/PDF.</p>
+                <div class="card-tech">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">AJAX</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="card-link">🔗 Демо</a>
+                    <a href="#" class="card-link">📁 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка 4 - Интернет-магазин -->
+        <div class="portfolio-card">
+            <div class="card-image">
+                <img src="https://placehold.co/600x400/2a2a4a/ffffff?text=Интернет-магазин" alt="Интернет магазин">
+                <div class="card-overlay">
+                    <a href="#" class="view-project" target="_blank">Перейти на сайт →</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Маркетплейс техники</h3>
+                <p class="card-description">Полноценный интернет-магазин с корзиной, фильтрацией, личным кабинетом и интеграцией платежей.</p>
+                <div class="card-tech">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Express</span>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="card-link">🔗 Демо</a>
+                    <a href="#" class="card-link">📁 GitHub</a>
+                </div>
+            </div>
         </div>
     </div>
-    <img class="photo" src="assets/images/Myphoto.png" alt="Евгений Нейфельд">
-</div>
+
+    <!-- СПИСОК ССЫЛОК НА САЙТЫ С ОПИСАНИЕМ -->
+    <div class="projects-list">
+        <h3 class="list-title">Все проекты</h3>
+        <div class="projects-list-container">
+            <!-- Проект 1 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">pitomnik-golden.ru</a>
+                    <span class="list-item-status active">В работе</span>
+                </div>
+                <p class="list-item-description">
+                    Лендинг для питомника золотистых ретриверов. Реализован каталог щенков с фильтрацией, 
+                    автоматическое добавление новых питомцев через VK API, форма онлайн-бронирования, 
+                    интеграция с картами для указания местоположения питомника.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">📱 Адаптивный дизайн</span>
+                    <span class="feature">🔄 VK API интеграция</span>
+                    <span class="feature">📝 Форма обратной связи</span>
+                    <span class="feature">🗺️ Карта проезда</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">VK API</span>
+                    <span class="tech-badge">PHP</span>
+                </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">erp-os.ru</a>
+                    <span class="list-item-status active">Завершен</span>
+                </div>
+                <p class="list-item-description">
+                    ERP-система для управления предприятием. Включает модули: складской учет, управление персоналом, 
+                    генерация отчетов, система авторизации с разграничением прав доступа (Admin/User/Manager), 
+                    экспорт данных в Excel и PDF, встроенный чат для сотрудников.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">🔐 Многоуровневая авторизация</span>
+                    <span class="feature">📊 Генерация отчетов</span>
+                    <span class="feature">💬 Внутренний чат</span>
+                    <span class="feature">📎 Экспорт Excel/PDF</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Bootstrap</span>
+                    <span class="tech-badge">AJAX</span>
+                    <span class="tech-badge">jQuery</span>
+                </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">abs-crm.ru</a>
+                    <span class="list-item-status active">Завершен</span>
+                </div>
+                <p class="list-item-description">
+                    CRM-система для автоматизации работы с клиентами. Функционал: ведение базы клиентов, 
+                    управление задачами и сделками, календарь встреч, автоматическая рассылка уведомлений, 
+                    дашборд с ключевыми метриками, импорт/экспорт контактов.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">👥 Управление клиентами</span>
+                    <span class="feature">📅 Календарь задач</span>
+                    <span class="feature">📧 Email-рассылки</span>
+                    <span class="feature">📈 Дашборд аналитики</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">AJAX</span>
+                    <span class="tech-badge">Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- Проект 4 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">techno-market.ru</a>
+                    <span class="list-item-status active">В разработке</span>
+                </div>
+                <p class="list-item-description">
+                    Интернет-магазин электроники. Полный функционал: каталог товаров с фильтрацией по цене/бренду, 
+                    корзина с сохранением сессии, личный кабинет с историей заказов, интеграция с платежной системой 
+                    Stripe, админ-панель для управления товарами и заказами.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">🛒 Корзина товаров</span>
+                    <span class="feature">💳 Интеграция Stripe</span>
+                    <span class="feature">👤 Личный кабинет</span>
+                    <span class="feature">🔧 Админ-панель</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Express</span>
+                    <span class="tech-badge">Stripe API</span>
+                </div>
+            </div>
+
+            <!-- Проект 5 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">sales-dashboard.ru</a>
+                    <span class="list-item-status active">Завершен</span>
+                </div>
+                <p class="list-item-description">
+                    Дашборд для аналитики продаж. Интерактивные графики и диаграммы, фильтрация по датам и регионам, 
+                    экспорт данных в CSV, система уведомлений о ключевых метриках, ролевая модель доступа, 
+                    темная/светлая тема оформления.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">📊 Интерактивные графики</span>
+                    <span class="feature">🎛️ Фильтрация данных</span>
+                    <span class="feature">📤 Экспорт CSV</span>
+                    <span class="feature">🌓 Смена темы</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">Chart.js</span>
+                    <span class="tech-badge">Tailwind</span>
+                    <span class="tech-badge">Firebase</span>
+                </div>
+            </div>
+
+            <!-- Проект 6 -->
+            <div class="list-item">
+                <div class="list-item-header">
+                    <a href="#" class="list-item-link" target="_blank">task-manager.pro</a>
+                    <span class="list-item-status active">Завершен</span>
+                </div>
+                <p class="list-item-description">
+                    Веб-приложение для управления задачами. Создание проектов и задач, назначение исполнителей, 
+                    установка дедлайнов, комментарии к задачам, уведомления на почту, поиск и фильтрация, 
+                    канбан-доска с перетаскиванием задач.
+                </p>
+                <div class="list-item-features">
+                    <span class="feature">✅ Управление задачами</span>
+                    <span class="feature">👥 Назначение исполнителей</span>
+                    <span class="feature">📧 Email уведомления</span>
+                    <span class="feature">🎯 Канбан-доска</span>
+                </div>
+                <div class="list-item-stack">
+                    <strong>Стек:</strong>
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">Prisma</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">TypeScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- БЛОК С ОТЗЫВАМИ -->
+    
+    <div class="reviews-section">
+        <h3 class="links-title">Отзывы клиентов</h3>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-text">"Евгений разработал лендинг для нашего питомника. Всё работает отлично, клиенты довольны! Особенно понравилась интеграция с VK."</div>
+                <div class="review-author">— Анна, владелец питомника "Golden Heart"</div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <div class="review-text">"Профессиональный подход к работе. Все пожелания учтены, сроки соблюдены. Будем сотрудничать дальше!"</div>
+                <div class="review-author">— Михаил, директор "АБС-Автоматизация"</div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <div class="review-text">"Отличный fullstack разработчик! Сделал сложную CRM систему с нуля. Рекомендую!"</div>
+                <div class="review-author">— Елена, руководитель отдела IT</div>
+                <div class="review-rating">★★★★★</div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- БЛОК-ПРИЗЫВ -->
+    <div class="projects-cta">
+        <h3 class="cta-title">Хотите такой же проект?</h3>
+        <p class="cta-text">Свяжитесь со мной, и вместе мы создадим идеальный сайт для вашего бизнеса</p>
+        <button class="cta-button" onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'})">Связаться со мной</button>
+    </div>
 </section>
 </div>
-</div>
+
+<script>
+    // Небольшой скрипт для обработки кликов по кнопкам "Смотреть проект"
+    document.querySelectorAll('.view-project').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            alert('Демо-версия проекта. Полная версия будет доступна после согласования.');
+        });
+    });
+</script>
 </body>
 </html>
