@@ -1,0 +1,63 @@
+  /**{
+  border: 1px solid green;
+}  */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+.navbar{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size:medium;
+  text-decoration: none;
+}
+label{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size:medium;
+  text-decoration: none;
+}
+.buttons-line {
+  display: flex;
+  align-items: center;
+}
+#kassa-table {
+  border-collapse: collapse;
+  width: 100%;
+ }
+
+#kassa-table tbody tr td {
+  vertical-align: middle;
+  background-color: #ffffff;
+  font-size: 0.8rem;
+}
+
+#kassa-table th,
+#kassa-table td {
+  border: 1px solid #ddd;
+  
+}
+
+td:nth-child(2) {
+  white-space: nowrap;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .itogi {
+    align-items:flex-start;
+  }
+
+  .text-itogi {
+   
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+ }
+ @media print {
+  .header, .buttons-line {
+    display: none;
+  }
+}

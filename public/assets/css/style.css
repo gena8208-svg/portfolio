@@ -509,6 +509,25 @@ body {
     box-shadow: 0 20px 40px rgba(216, 65, 1, 0.2);
 }
 
+.card-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.card-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+.card-link:hover {
+    color: #D84101;
+    font-weight:bolder;
+}
+
 .card-image {
     width: 100%;
     height: 250px;
